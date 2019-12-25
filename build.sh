@@ -1,5 +1,7 @@
 #!/bin/sh
 
+
+
 set -e
 set -u
 
@@ -103,10 +105,10 @@ download \
   "https://github.com/madler/zlib/archive/"
 
 download \
-  "last_x264.tar.bz2" \
+  "x264-master.tar.bz2" \
   "" \
   "nil" \
-  "http://download.videolan.org/pub/videolan/x264/snapshots/"
+  "https://code.videolan.org/videolan/x264/-/archive/master/"
 
 download \
   "x265_2.7.tar.gz" \
@@ -212,9 +214,9 @@ download \
   "https://github.com/xiph/speex/archive/"
 
 download \
-  "n4.0.tar.gz" \
-  "ffmpeg4.0.tar.gz" \
-  "4749a5e56f31e7ccebd3f9924972220f" \
+  "n4.2.1.tar.gz" \
+  "ffmpeg4.2.1.tar.gz" \
+  "05792c611d1e3ebdf2c7003ff4467390" \
   "https://github.com/FFmpeg/FFmpeg/archive"
 
 [ $download_only -eq 1 ] && exit 0
